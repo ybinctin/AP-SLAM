@@ -1,0 +1,141 @@
+DEBUG - 2025-10-15 18:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 19:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 19:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 19:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 19:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-15 19:31:39 --> ErrorException: simplexml_load_file(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+[Method: GET, Route: accueil]
+in APPPATH\Controllers\Accueil.php on line 26.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'simplexml_load_file(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed', 'C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\app\\Controllers\\Accueil.php', 26)
+ 2 APPPATH\Controllers\Accueil.php(26): simplexml_load_file('https://www.santemagazine.fr/feeds/rss/sante')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-15 19:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-15 19:35:42 --> TypeError: It's not possible to assign a complex type to properties, array given
+[Method: GET, Route: accueil]
+in APPPATH\Controllers\Accueil.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-15 19:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-15 19:46:40 --> ErrorException: Undefined variable $actualite
+[Method: GET, Route: accueil]
+in APPPATH\Views\actualites.php on line 2.
+ 1 APPPATH\Views\actualites.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $actualite', 'C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('actualites', [], true)
+ 5 APPPATH\Controllers\Accueil.php(29): view('actualites')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-15 19:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 19:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 20:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 20:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-15 20:06:06 --> ErrorException: Array to string conversion
+[Method: GET, Route: accueil]
+in APPPATH\Views\actualites.php on line 2.
+ 1 APPPATH\Views\actualites.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('actualites', [], true)
+ 5 APPPATH\Controllers\Accueil.php(66): view('actualites', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-15 20:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-15 20:07:30 --> ErrorException: Array to string conversion
+[Method: GET, Route: accueil]
+in APPPATH\Views\actualites.php on line 4.
+ 1 APPPATH\Views\actualites.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php', 4)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('actualites', [], true)
+ 5 APPPATH\Controllers\Accueil.php(66): view('actualites', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-15 20:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-15 20:07:31 --> ErrorException: Array to string conversion
+[Method: GET, Route: accueil]
+in APPPATH\Views\actualites.php on line 4.
+ 1 APPPATH\Views\actualites.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php', 4)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('actualites', [], true)
+ 5 APPPATH\Controllers\Accueil.php(66): view('actualites', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-15 20:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-15 20:07:31 --> ErrorException: Array to string conversion
+[Method: GET, Route: accueil]
+in APPPATH\Views\actualites.php on line 4.
+ 1 APPPATH\Views\actualites.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php', 4)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('actualites', [], true)
+ 5 APPPATH\Controllers\Accueil.php(66): view('actualites', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-15 20:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-15 20:10:15 --> ErrorException: Undefined variable $article
+[Method: GET, Route: accueil]
+in APPPATH\Views\actualites.php on line 5.
+ 1 APPPATH\Views\actualites.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $article', 'C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('actualites', [], true)
+ 5 APPPATH\Controllers\Accueil.php(66): view('actualites', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\wamp64\\www\\Mission 3\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-15 20:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 20:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 20:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 20:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 20:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 20:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 20:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 20:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 20:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 20:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 20:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-15 20:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

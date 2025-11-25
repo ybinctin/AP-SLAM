@@ -1,0 +1,208 @@
+DEBUG - 2025-10-14 12:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 12:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 12:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 12:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 12:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 12:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 12:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 12:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 12:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 12:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 12:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-14 12:54:23 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'gsbfrais2025' in Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'myroot', Object(SensitiveParameterValue), 'gsbfrais2025', 3306, '', 0)
+#1 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `fichefr...', Array, false)
+#4 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\app\Models\GsbModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\app\Controllers\Gererfrais.php(29): App\Models\GsbModel->get_id_ficheFrais('b59', '2025', '10')
+#6 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\CodeIgniter.php(903): App\Controllers\Gererfrais->__construct()
+#7 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+#8 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\rewrite.php(44): require_once('Z:\\BTS2\\Informa...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'gsbfrais2025' in Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `fichefr...', Array, false)
+#3 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\app\Models\GsbModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+#4 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\app\Controllers\Gererfrais.php(29): App\Models\GsbModel->get_id_ficheFrais('b59', '2025', '10')
+#5 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\CodeIgniter.php(903): App\Controllers\Gererfrais->__construct()
+#6 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+#7 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\rewrite.php(44): require_once('Z:\\BTS2\\Informa...')
+#12 {main}
+CRITICAL - 2025-10-14 12:54:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'gsbfrais2025'
+[Method: GET, Route: gererfrais]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `fichefrais`.`idFiche`, `fichefrais`.`idEtat`
+FROM `fichefrais`
+WHERE `fichefrais`.`idVisiteur` = :fichefrais.idVisiteur:
+AND `fichefrais`.`annee` = :fichefrais.annee:
+AND `fichefrais`.`mois` = :fichefrais.mois:', [...], false)
+ 3 APPPATH\Models\GsbModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Gererfrais.php(29): App\Models\GsbModel->get_id_ficheFrais('b59', '2025', '10')
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Gererfrais->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 2\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-14 12:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 13:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 13:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-14 13:03:03 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'gsbfrais2025' in Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'myroot', Object(SensitiveParameterValue), 'gsbfrais2025', 3306, '', 0)
+#1 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `fichefr...', Array, false)
+#4 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\app\Models\GsbModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\app\Controllers\Gererfrais.php(29): App\Models\GsbModel->get_id_ficheFrais('b59', '2025', '10')
+#6 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\CodeIgniter.php(903): App\Controllers\Gererfrais->__construct()
+#7 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+#8 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\rewrite.php(44): require_once('Z:\\BTS2\\Informa...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'gsbfrais2025' in Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `fichefr...', Array, false)
+#3 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\app\Models\GsbModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+#4 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\app\Controllers\Gererfrais.php(29): App\Models\GsbModel->get_id_ficheFrais('b59', '2025', '10')
+#5 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\CodeIgniter.php(903): App\Controllers\Gererfrais->__construct()
+#6 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+#7 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 Z:\BTS2\Informatique\AP\PITON\Mission 2\GSBFrais-V2\system\rewrite.php(44): require_once('Z:\\BTS2\\Informa...')
+#12 {main}
+CRITICAL - 2025-10-14 13:03:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'gsbfrais2025'
+[Method: GET, Route: gererfrais]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `fichefrais`.`idFiche`, `fichefrais`.`idEtat`
+FROM `fichefrais`
+WHERE `fichefrais`.`idVisiteur` = :fichefrais.idVisiteur:
+AND `fichefrais`.`annee` = :fichefrais.annee:
+AND `fichefrais`.`mois` = :fichefrais.mois:', [...], false)
+ 3 APPPATH\Models\GsbModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Gererfrais.php(29): App\Models\GsbModel->get_id_ficheFrais('b59', '2025', '10')
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Gererfrais->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 2\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-14 13:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 13:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 13:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 13:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 13:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 14:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-14 14:06:31 --> ErrorException: simplexml_load_file(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP?
+[Method: GET, Route: accueil]
+in APPPATH\Controllers\Accueil.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'simplexml_load_file(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP?', 'Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 3\\GSBFrais-V2\\app\\Controllers\\Accueil.php', 23)
+ 2 APPPATH\Controllers\Accueil.php(23): simplexml_load_file('https://www.santemagazine.fr/feeds/rss/sante')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 3\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-14 14:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 14:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 14:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-14 14:06:40 --> ErrorException: simplexml_load_file(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP?
+[Method: GET, Route: accueil]
+in APPPATH\Controllers\Accueil.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'simplexml_load_file(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP?', 'Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 3\\GSBFrais-V2\\app\\Controllers\\Accueil.php', 23)
+ 2 APPPATH\Controllers\Accueil.php(23): simplexml_load_file('https://www.santemagazine.fr/feeds/rss/sante')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 3\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-14 14:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-14 14:13:30 --> ErrorException: simplexml_load_file(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP?
+[Method: GET, Route: accueil]
+in APPPATH\Controllers\Accueil.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'simplexml_load_file(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP?', 'Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 3\\GSBFrais-V2\\app\\Controllers\\Accueil.php', 22)
+ 2 APPPATH\Controllers\Accueil.php(22): simplexml_load_file('https://www.santemagazine.fr/feeds/rss/sante')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 3\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-14 14:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-14 14:18:15 --> CodeIgniter\HTTP\Exceptions\HTTPException: 60 : SSL certificate problem: self-signed certificate in certificate chain
+[Method: GET, Route: accueil]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 699.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(699): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('60', 'SSL certificate problem: self-signed certificate in certificate chain')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://www.santemagazine.fr/feeds/rss/sante')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://www.santemagazine.fr/feeds/rss/sante', [])
+ 5 APPPATH\Controllers\Accueil.php(23): CodeIgniter\HTTP\CURLRequest->get('https://www.santemagazine.fr/feeds/rss/sante')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 3\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-14 14:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-14 14:22:54 --> ErrorException: Undefined variable $actualites
+[Method: GET, Route: accueil]
+in APPPATH\Views\actualites.php on line 2.
+ 1 APPPATH\Views\actualites.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $actualites', 'Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 3\\GSBFrais-V2\\app\\Views\\actualites.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('actualites', [], true)
+ 5 APPPATH\Controllers\Accueil.php(29): view('actualites', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 3\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-10-14 14:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-14 14:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-14 14:30:34 --> ErrorException: simplexml_load_file(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP?
+[Method: GET, Route: accueil]
+in APPPATH\Controllers\Accueil.php on line 26.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'simplexml_load_file(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP?', 'Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 3\\GSBFrais-V2\\app\\Controllers\\Accueil.php', 26)
+ 2 APPPATH\Controllers\Accueil.php(26): simplexml_load_file('https://www.santemagazine.fr/feeds/rss/sante')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Accueil->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 3\\GSBFrais-V2\\public\\index.php')

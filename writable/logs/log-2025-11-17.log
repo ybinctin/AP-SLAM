@@ -1,0 +1,270 @@
+DEBUG - 2025-11-17 13:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 13:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-11-17 14:03:37 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::call_function()
+[Method: GET, Route: gererfrais]
+in APPPATH\Models\GsbModel.php on line 133.
+ 1 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-11-17 14:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-11-17 14:07:01 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE gsbfrais-2025.insertion_fichefrais; expected 9, got 8 in Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\MySQLi\Connection.php(327): mysqli->query('CALL insertion_...', 0)
+#1 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL insertion_...')
+#2 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL insertion_...')
+#3 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\app\Models\GsbModel.php(134): CodeIgniter\Database\BaseConnection->query('CALL insertion_...', Array)
+#4 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\app\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+#5 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+#6 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+#7 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\rewrite.php(44): require_once('Z:\\BTS2\\Informa...')
+#12 {main}
+CRITICAL - 2025-11-17 14:07:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Incorrect number of arguments for PROCEDURE gsbfrais-2025.insertion_fichefrais; expected 9, got 8
+[Method: GET, Route: gererfrais]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 APPPATH\Models\GsbModel.php(134): CodeIgniter\Database\BaseConnection->query('CALL insertion_fichefrais(?, ?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+CRITICAL - 2025-11-17 14:07:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Incorrect number of arguments for PROCEDURE gsbfrais-2025.insertion_fichefrais; expected 9, got 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL insertion_fichefrais(\'2025\', \'11\', \'b59\', \'CR\', \'2025-11-17\', 0, 0, \'Fiche créée, saisie en cours\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL insertion_fichefrais(\'2025\', \'11\', \'b59\', \'CR\', \'2025-11-17\', 0, 0, \'Fiche créée, saisie en cours\')')
+ 3 APPPATH\Models\GsbModel.php(134): CodeIgniter\Database\BaseConnection->query('CALL insertion_fichefrais(?, ?, ?, ?, ?, ?, ?, ?)', [...])
+ 4 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+CRITICAL - 2025-11-17 14:07:01 --> [Caused by] mysqli_sql_exception: Incorrect number of arguments for PROCEDURE gsbfrais-2025.insertion_fichefrais; expected 9, got 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('CALL insertion_fichefrais(\'2025\', \'11\', \'b59\', \'CR\', \'2025-11-17\', 0, 0, \'Fiche créée, saisie en cours\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL insertion_fichefrais(\'2025\', \'11\', \'b59\', \'CR\', \'2025-11-17\', 0, 0, \'Fiche créée, saisie en cours\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL insertion_fichefrais(\'2025\', \'11\', \'b59\', \'CR\', \'2025-11-17\', 0, 0, \'Fiche créée, saisie en cours\')')
+ 4 APPPATH\Models\GsbModel.php(134): CodeIgniter\Database\BaseConnection->query('CALL insertion_fichefrais(?, ?, ?, ?, ?, ?, ?, ?)', [...])
+ 5 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-11-17 14:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-11-17 14:09:08 --> mysqli_sql_exception: Can not modify more than one base table through a join view 'gsbfrais-2025.infos_fichefrais' in Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\MySQLi\Connection.php(327): mysqli->query('CALL insertion_...', 0)
+#1 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL insertion_...')
+#2 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL insertion_...')
+#3 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\app\Models\GsbModel.php(134): CodeIgniter\Database\BaseConnection->query('CALL insertion_...', Array)
+#4 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\app\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+#5 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+#6 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+#7 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\rewrite.php(44): require_once('Z:\\BTS2\\Informa...')
+#12 {main}
+CRITICAL - 2025-11-17 14:09:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Can not modify more than one base table through a join view 'gsbfrais-2025.infos_fichefrais'
+[Method: GET, Route: gererfrais]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 APPPATH\Models\GsbModel.php(134): CodeIgniter\Database\BaseConnection->query('CALL insertion_fichefrais(?, ?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+CRITICAL - 2025-11-17 14:09:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Can not modify more than one base table through a join view 'gsbfrais-2025.infos_fichefrais'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL insertion_fichefrais(\'2025\', \'11\', \'b59\', \'CR\', \'2025-11-17\', 0, 0, \'Fiche créée, saisie en cours\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL insertion_fichefrais(\'2025\', \'11\', \'b59\', \'CR\', \'2025-11-17\', 0, 0, \'Fiche créée, saisie en cours\')')
+ 3 APPPATH\Models\GsbModel.php(134): CodeIgniter\Database\BaseConnection->query('CALL insertion_fichefrais(?, ?, ?, ?, ?, ?, ?, ?)', [...])
+ 4 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+CRITICAL - 2025-11-17 14:09:09 --> [Caused by] mysqli_sql_exception: Can not modify more than one base table through a join view 'gsbfrais-2025.infos_fichefrais'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('CALL insertion_fichefrais(\'2025\', \'11\', \'b59\', \'CR\', \'2025-11-17\', 0, 0, \'Fiche créée, saisie en cours\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('CALL insertion_fichefrais(\'2025\', \'11\', \'b59\', \'CR\', \'2025-11-17\', 0, 0, \'Fiche créée, saisie en cours\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('CALL insertion_fichefrais(\'2025\', \'11\', \'b59\', \'CR\', \'2025-11-17\', 0, 0, \'Fiche créée, saisie en cours\')')
+ 4 APPPATH\Models\GsbModel.php(134): CodeIgniter\Database\BaseConnection->query('CALL insertion_fichefrais(?, ?, ?, ?, ?, ?, ?, ?)', [...])
+ 5 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-11-17 14:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-11-17 14:10:44 --> mysqli_sql_exception: Can not modify more than one base table through a join view 'gsbfrais-2025.infos_fichefrais' in Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `in...', 0)
+#1 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\app\Models\GsbModel.php(133): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\app\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+#6 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+#7 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+#8 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\rewrite.php(44): require_once('Z:\\BTS2\\Informa...')
+#13 {main}
+CRITICAL - 2025-11-17 14:10:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Can not modify more than one base table through a join view 'gsbfrais-2025.infos_fichefrais'
+[Method: GET, Route: gererfrais]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (:idutilisateur:, :annee:, :mois:, :nbJustificatifs:, :montantValide:, :dateModif:, :idEtat:, :libelle:)', [...], false)
+ 2 APPPATH\Models\GsbModel.php(133): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+CRITICAL - 2025-11-17 14:10:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Can not modify more than one base table through a join view 'gsbfrais-2025.infos_fichefrais'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-17\', \'CR\', \'Fiche créée, saisie en cours\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-17\', \'CR\', \'Fiche créée, saisie en cours\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (:idutilisateur:, :annee:, :mois:, :nbJustificatifs:, :montantValide:, :dateModif:, :idEtat:, :libelle:)', [...], false)
+ 4 APPPATH\Models\GsbModel.php(133): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+CRITICAL - 2025-11-17 14:10:44 --> [Caused by] mysqli_sql_exception: Can not modify more than one base table through a join view 'gsbfrais-2025.infos_fichefrais'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-17\', \'CR\', \'Fiche créée, saisie en cours\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-17\', \'CR\', \'Fiche créée, saisie en cours\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-17\', \'CR\', \'Fiche créée, saisie en cours\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (:idutilisateur:, :annee:, :mois:, :nbJustificatifs:, :montantValide:, :dateModif:, :idEtat:, :libelle:)', [...], false)
+ 5 APPPATH\Models\GsbModel.php(133): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-11-17 14:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-11-17 14:11:09 --> mysqli_sql_exception: Unknown column 'libelle' in 'field list' in Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `fi...', 0)
+#1 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fi...')
+#2 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fi...')
+#3 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fi...', Array, false)
+#4 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\app\Models\GsbModel.php(133): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\app\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+#6 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+#7 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+#8 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\rewrite.php(44): require_once('Z:\\BTS2\\Informa...')
+#13 {main}
+CRITICAL - 2025-11-17 14:11:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'libelle' in 'field list'
+[Method: GET, Route: gererfrais]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (:idutilisateur:, :annee:, :mois:, :nbJustificatifs:, :montantValide:, :dateModif:, :idEtat:, :libelle:)', [...], false)
+ 2 APPPATH\Models\GsbModel.php(133): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+CRITICAL - 2025-11-17 14:11:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'libelle' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-17\', \'CR\', \'Fiche créée, saisie en cours\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-17\', \'CR\', \'Fiche créée, saisie en cours\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (:idutilisateur:, :annee:, :mois:, :nbJustificatifs:, :montantValide:, :dateModif:, :idEtat:, :libelle:)', [...], false)
+ 4 APPPATH\Models\GsbModel.php(133): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+CRITICAL - 2025-11-17 14:11:09 --> [Caused by] mysqli_sql_exception: Unknown column 'libelle' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-17\', \'CR\', \'Fiche créée, saisie en cours\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-17\', \'CR\', \'Fiche créée, saisie en cours\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-17\', \'CR\', \'Fiche créée, saisie en cours\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`, `libelle`) VALUES (:idutilisateur:, :annee:, :mois:, :nbJustificatifs:, :montantValide:, :dateModif:, :idEtat:, :libelle:)', [...], false)
+ 5 APPPATH\Models\GsbModel.php(133): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-11-17 14:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-17 14:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

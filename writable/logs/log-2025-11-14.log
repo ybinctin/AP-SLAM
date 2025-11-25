@@ -1,0 +1,147 @@
+DEBUG - 2025-11-14 09:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-11-14 09:51:04 --> mysqli_sql_exception: Unknown column 'role.idrole' in 'field list' in Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `idutili...', 0)
+#1 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idutili...')
+#2 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idutili...')
+#3 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `idutili...', Array, false)
+#4 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\app\Models\GsbModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\app\Controllers\Connexion.php(52): App\Models\GsbModel->get_infos_utilisateur('ycottin', '2hoh9')
+#6 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(933): App\Controllers\Connexion->valider()
+#7 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+#8 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\rewrite.php(44): require_once('Z:\\BTS2\\Informa...')
+#13 {main}
+CRITICAL - 2025-11-14 09:51:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'role.idrole' in 'field list'
+[Method: POST, Route: connexion/valider]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `idutilisateur`, `nom`, `prenom`, `login`, `role`.`idrole`, `role`.`libellerole`
+FROM `infos_utilisateur`
+WHERE `login` = :login:
+AND `mdp` = :mdp:', [...], false)
+ 2 APPPATH\Models\GsbModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Connexion.php(52): App\Models\GsbModel->get_infos_utilisateur('ycottin', '2hoh9')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Connexion->valider()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+CRITICAL - 2025-11-14 09:51:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'role.idrole' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idutilisateur`, `nom`, `prenom`, `login`, `role`.`idrole`, `role`.`libellerole`
+FROM `infos_utilisateur`
+WHERE `login` = \'ycottin\'
+AND `mdp` = \'2hoh9\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idutilisateur`, `nom`, `prenom`, `login`, `role`.`idrole`, `role`.`libellerole`
+FROM `infos_utilisateur`
+WHERE `login` = \'ycottin\'
+AND `mdp` = \'2hoh9\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `idutilisateur`, `nom`, `prenom`, `login`, `role`.`idrole`, `role`.`libellerole`
+FROM `infos_utilisateur`
+WHERE `login` = :login:
+AND `mdp` = :mdp:', [...], false)
+ 4 APPPATH\Models\GsbModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Connexion.php(52): App\Models\GsbModel->get_infos_utilisateur('ycottin', '2hoh9')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Connexion->valider()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+CRITICAL - 2025-11-14 09:51:04 --> [Caused by] mysqli_sql_exception: Unknown column 'role.idrole' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `idutilisateur`, `nom`, `prenom`, `login`, `role`.`idrole`, `role`.`libellerole`
+FROM `infos_utilisateur`
+WHERE `login` = \'ycottin\'
+AND `mdp` = \'2hoh9\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `idutilisateur`, `nom`, `prenom`, `login`, `role`.`idrole`, `role`.`libellerole`
+FROM `infos_utilisateur`
+WHERE `login` = \'ycottin\'
+AND `mdp` = \'2hoh9\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `idutilisateur`, `nom`, `prenom`, `login`, `role`.`idrole`, `role`.`libellerole`
+FROM `infos_utilisateur`
+WHERE `login` = \'ycottin\'
+AND `mdp` = \'2hoh9\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `idutilisateur`, `nom`, `prenom`, `login`, `role`.`idrole`, `role`.`libellerole`
+FROM `infos_utilisateur`
+WHERE `login` = :login:
+AND `mdp` = :mdp:', [...], false)
+ 5 APPPATH\Models\GsbModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Connexion.php(52): App\Models\GsbModel->get_infos_utilisateur('ycottin', '2hoh9')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Connexion->valider()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connexion))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-11-14 09:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-14 09:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-14 09:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-11-14 09:51:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gsbfrais-2025`.`fichefrais`, CONSTRAINT `fichefrais_ibfk_2` FOREIGN KEY (`idutilisateur`) REFERENCES `visiteur` (`idvisiteur`)) in Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `in...', 0)
+#1 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\app\Models\GsbModel.php(133): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\app\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+#6 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+#7 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+#8 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 Z:\BTS2\Informatique\AP\PITON\Mission 4\GSBFrais-V2\system\rewrite.php(44): require_once('Z:\\BTS2\\Informa...')
+#13 {main}
+CRITICAL - 2025-11-14 09:51:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gsbfrais-2025`.`fichefrais`, CONSTRAINT `fichefrais_ibfk_2` FOREIGN KEY (`idutilisateur`) REFERENCES `visiteur` (`idvisiteur`))
+[Method: GET, Route: gererfrais]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`) VALUES (:idutilisateur:, :annee:, :mois:, :nbJustificatifs:, :montantValide:, :dateModif:, :idEtat:)', [...], false)
+ 2 APPPATH\Models\GsbModel.php(133): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+CRITICAL - 2025-11-14 09:51:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gsbfrais-2025`.`fichefrais`, CONSTRAINT `fichefrais_ibfk_2` FOREIGN KEY (`idutilisateur`) REFERENCES `visiteur` (`idvisiteur`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-14\', \'CR\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-14\', \'CR\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`) VALUES (:idutilisateur:, :annee:, :mois:, :nbJustificatifs:, :montantValide:, :dateModif:, :idEtat:)', [...], false)
+ 4 APPPATH\Models\GsbModel.php(133): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+CRITICAL - 2025-11-14 09:51:56 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gsbfrais-2025`.`fichefrais`, CONSTRAINT `fichefrais_ibfk_2` FOREIGN KEY (`idutilisateur`) REFERENCES `visiteur` (`idvisiteur`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-14\', \'CR\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-14\', \'CR\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`) VALUES (\'b59\', \'2025\', \'11\', 0, 0, \'2025-11-14\', \'CR\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `infos_fichefrais` (`idutilisateur`, `annee`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`) VALUES (:idutilisateur:, :annee:, :mois:, :nbJustificatifs:, :montantValide:, :dateModif:, :idEtat:)', [...], false)
+ 5 APPPATH\Models\GsbModel.php(133): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Gererfrais.php(45): App\Models\GsbModel->cree_nouvelles_lignes_frais('b59', '2025', '11')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Gererfrais->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gererfrais))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('Z:\\BTS2\\Informatique\\AP\\PITON\\Mission 4\\GSBFrais-V2\\public\\index.php')
+DEBUG - 2025-11-14 10:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-14 10:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-14 10:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
