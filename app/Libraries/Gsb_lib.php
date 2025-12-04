@@ -24,7 +24,7 @@ class Gsb_lib
     /** Retourne le couple annee/mois aaaamm selon une date jj/mm/aaaa (TODO pour date passée) */
     public function get_annee_mois(string $date = null): string
     {
-        return date("Ym");
+        return date(format: "Ym");
     }
     public function get_annee_from_anneemois(string $annee_mois): string
     {
