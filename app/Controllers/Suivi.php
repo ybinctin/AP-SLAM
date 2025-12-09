@@ -41,6 +41,11 @@ class Suivi extends BaseController
         return $this->commun();
     }
 
+    private function valider_remboursement() {
+        
+        // $this->gsb_model->maj_etat_fiche_frais();
+    }
+
     private function commun()
     {
         $data['listemenus'] = $this->gsbLib->get_menus(session()->get('role'));

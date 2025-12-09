@@ -46,7 +46,7 @@ class Connexion extends BaseController
             return redirect()->back()->withInput()->with('validation', $this->validator);
         }
 
-        $login = $this->request->getPost('txtLogin');
+        $login = $this->request->getPost(index: 'txtLogin');
         $mdp = $this->request->getPost('pwdMdp');
 
         $utilisateur = $this->gsb_model->get_infos_utilisateur($login, $mdp);
