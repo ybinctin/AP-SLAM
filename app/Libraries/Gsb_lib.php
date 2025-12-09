@@ -17,7 +17,7 @@ class Gsb_lib
     /** Transforme une date yyyy-mm-dd en jj/mm/yyyy */
     public function date_vers_francais(string $maDate): string
     {
-        [$annee, $mois, $jour] = explode('-', $maDate);
+        [$annee, $mois, $jour] = explode('-', string: $maDate);
         return "$jour/$mois/$annee";
     }
 

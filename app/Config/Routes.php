@@ -17,8 +17,10 @@ $routes->post('gererfrais/maj_fraisforfait', 'GererFrais::valider_maj_fraisforfa
 $routes->post('gererfrais/creation_fraishorsforfait', 'GererFrais::valider_creation_fraishorsforfait');
 $routes->get('gererfrais/supp_fraishorsforfait/(:num)', 'GererFrais::supprimer_fraishorsforfait/$1');
 
-$routes->get('validation', 'Validation::index');
-$routes->get('suivi', 'Suivi::index');
-
 $routes->get('etatfrais', 'EtatFrais::index');
 $routes->post('etatfrais/mois', 'EtatFrais::selectionner_mois');
+
+$routes->get('validation', 'Validation::index');
+
+$routes->get('suivi', 'Suivi::index');
+$routes->post('suivi/infos', 'Suivi::selectionner_informations');

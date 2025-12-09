@@ -166,7 +166,7 @@ class GsbModel extends Model
     public function maj_etat_fiche_frais($idFiche, $etat)
     {
         $this->db->table('fichefrais')->update(
-            ['idEtat' => $etat, 'dateModif' => date('Y-m-d')],
+            ['idEtat' => $etat, 'dateModif' => date(format: 'Y-m-d')],
             ['idFiche' => $idFiche]
         );
     }
@@ -204,5 +204,26 @@ class GsbModel extends Model
             'montant' => $montant
         ]);
         return $resultat;
+    }
+
+    public function get_tous_les_utilisateurs()
+    {
+        return $this->db->table('utilisateur')
+            ->select('idutilisateur, nom, prenom')
+            ->where('idrole', 'VS')
+            ->orderBy('idutilisateur')
+            ->get()
+            ->getResultArray();
+    }
+
+    public function get_fiches_frais_validation($idUtilisateur)
+    {
+        return $this->db->table('fichefrais')
+            ->select('idFiche, idutilisateur, annee, mois, nbJustificatifs, montantValide, dateModif, idEtat')
+            ->where('idutilisateur', $idUtilisateur)
+            ->where('idEtat', 'VA')
+            ->orderBy('idFiche')
+            ->get()
+            ->getResultArray();
     }
 }
