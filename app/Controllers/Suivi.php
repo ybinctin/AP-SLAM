@@ -25,16 +25,18 @@ class Suivi extends BaseController
         if (!session()->get('isLoggedIn')) {
             return redirect()->to('/');
         }
+        session()->remove(['id_utilisateur', 'id_fiche']);
         return $this->commun();
     }
 
     public function selectionner_informations()
     {
-        session()->set('id_utilisateur', $this->request->getPost('lstUtilisateur'));
-        session()->set('id_fiche', $this->request->getPost('lstFichesFrais'));
-
-        var_dump(session('id_utilisateur'));
-        var_dump(session('id_fiche'));
+        if ($this->request->getPost('lstUtilisateur') != null) {
+            session()->set('id_utilisateur', $this->request->getPost('lstUtilisateur'));
+        }
+        if ($this->request->getPost('lstFicheFrais') != null) {
+            session()->set('id_fiche', $this->request->getPost('lstFicheFrais'));
+        }
 
         return $this->commun();
     }
@@ -58,7 +60,7 @@ class Suivi extends BaseController
         }
 
         $data['lst_contenu'] = $options_utilisateur;
-        $data['lst_select'] = session('id_utilisateur');
+        $data['lst_select'] = session(val: 'id_utilisateur');
         $data['lst_action'] = 'suivi/infos';
         $data['lst_id'] = 'lstUtilisateur';
         $data['lst_label'] = 'Visiteurs';
