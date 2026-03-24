@@ -226,4 +226,16 @@ class GsbModel extends Model
             ->get()
             ->getResultArray();
     }
+
+    public function update_mdp($idUtilisateur, $nvMdp) {
+        $majOK = true;
+        $res = $this->db->table('utilisateur')->update(
+            set: ['mdp' => $nvMdp, 'dernier_changement_mdp' => date('Y-m-d')],
+            where: ['idutilisateur' => $idUtilisateur]
+        );
+        if (!$res) {
+            $majOK = false;
+        }
+        return $majOK;
+    }
 }

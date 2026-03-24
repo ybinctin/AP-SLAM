@@ -1,27 +1,33 @@
 <?php
 namespace App\Controllers;
 
+use App\Libraries\Gsb_lib;
 use App\Models\GsbModel;
 
-class Connexion extends BaseController
+class ModificationMdp extends BaseController
 {
     protected $gsb_model;
+    protected $gsbLib;
 
     public function __construct()
     {
         helper(['url', 'form']); // helpers URL et form
 
         $this->gsb_model = new GsbModel();
+        $this->gsbLib = new Gsb_lib();
     }
 
     /**
      * Affiche l’écran de connexion
      */
-    public function login()
+    public function modification_normale()
     {
+        $data['listemenus'] = $this->gsbLib->get_menus(session()->get('role'));
+
         return view('structures/page_entete')
             . view('structures/messages')
-            . view('connexion')
+            . view('sommaire', $data)
+            . view('modifierMDP')
             . view('structures/page_pied');
     }
 
@@ -31,13 +37,17 @@ class Connexion extends BaseController
     public function valider()
     {
         $reglesSaisie = [
-            'txtLogin' => [
+            'txtMdpActuel' => [
                 'rules' => 'required|min_length[3]',
-                'label' => 'Login'
+                'label' => 'Mot de passe actuel'
             ],
-            'pwdMdp' => [
+            'txtNvMdp' => [
                 'rules' => 'required|min_length[3]',
-                'label' => 'Mot de passe'
+                'label' => 'Nouveau mot de passe'
+            ],
+            'txtConfirmerNvMdp' => [
+                'rules' => 'required|min_length[3]',
+                'label' => 'Confirmer mot de passe'
             ]
         ];
 
@@ -63,15 +73,6 @@ class Connexion extends BaseController
             return redirect()->to('/accueil');
         }
 
-        return redirect()->back()->withInput()->with('erreurs', 'Login ou mot de passe incorrect');
-    }
-
-    /**
-     * Déconnecte l’utilisateur
-     */
-    public function deconnexion()
-    {
-        session()->remove(['idutilisateur', 'nom', 'prenom', 'role', 'libellerole', 'isLoggedIn']);
-        return redirect()->to('/')->with('infos', 'Vous avez bien été déconnecté.');
+        return redirect()->back()->withInput()->with('erreurs', "Votre mot de passe n'est pas assez fort ou est le même que le précédent. Veuillez réessayer.");
     }
 }

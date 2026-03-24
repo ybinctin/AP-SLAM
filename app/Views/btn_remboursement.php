@@ -1,6 +1,6 @@
 <div class="piedForm">
     <p>
-        <?= form_submit('validerRemboursement', 'Valider', ['class' => 'bouton']) ?>
+        <?= form_submit('btnValider', 'Valider', ['class' => 'bouton']) ?>
     </p>
 </div>
 

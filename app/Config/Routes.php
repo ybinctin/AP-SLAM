@@ -10,6 +10,8 @@ $routes->get('connexion', 'Connexion::login');
 $routes->post('/connexion/valider', 'Connexion::valider');  
 $routes->get('/connexion/deconnexion', 'Connexion::deconnexion');  
 
+$routes->get('modificationMdp', 'ModificationMdp::modification_normale');  
+
 $routes->get('/accueil', 'Accueil::index');  
 
 $routes->get('gererfrais', 'GererFrais::index');
@@ -24,3 +26,5 @@ $routes->get('validation', 'Validation::index');
 
 $routes->get('suivi', 'Suivi::index');
 $routes->post('suivi/infos', 'Suivi::selectionner_informations');
+
+$routes->get('suivi/valider', 'Suivi::valider_remboursement');
