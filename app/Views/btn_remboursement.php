@@ -1,7 +1,3 @@
-<div class="piedForm">
-    <p>
-        <?= form_submit('btnValider', 'Valider', ['class' => 'bouton']) ?>
-    </p>
-</div>
-
-<?= form_close() ?>
+<a href="<?= site_url('suivi/rembourser') ?>" class="btn btn-primary text-white">
+    Valider le remboursement
+</a>

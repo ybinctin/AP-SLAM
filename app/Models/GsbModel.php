@@ -216,12 +216,12 @@ class GsbModel extends Model
             ->getResultArray();
     }
 
-    public function get_fiches_frais_validation($idUtilisateur)
+    public function get_fiches_frais($idUtilisateur, $idEtat)
     {
         return $this->db->table('fichefrais')
             ->select('idFiche, idutilisateur, annee, mois, nbJustificatifs, montantValide, dateModif, idEtat')
             ->where('idutilisateur', $idUtilisateur)
-            ->where('idEtat', 'VA')
+            ->where('idEtat', $idEtat)
             ->orderBy('idFiche')
             ->get()
             ->getResultArray();

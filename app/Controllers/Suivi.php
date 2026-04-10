@@ -69,7 +69,7 @@ class Suivi extends BaseController
         echo view('liste_deroulante', $data);
         echo view('structures/souscontenu_pied');
 
-        $les_fiches_frais = $this->gsb_model->get_fiches_frais_validation(session('id_utilisateur'));
+        $les_fiches_frais = $this->gsb_model->get_fiches_frais(session('id_utilisateur'), "VA");
         $options_fiche_frais = ["Sélectionner une fiche de frais à valider pour l'utilisateur choisi"];
         foreach ($les_fiches_frais as $une_fiche_frais) {
             $libelle = $une_fiche_frais['idFiche'] . " - Fiche de " . $this->gsbLib->get_nom_mois($une_fiche_frais['mois']) . " " . $une_fiche_frais['annee'];
@@ -118,8 +118,20 @@ class Suivi extends BaseController
 
         
     }
+
+    public function rembourser()
+{
+    if (!session()->get('isLoggedIn')) {
+        return redirect()->to('/');
+    }
+
+    $this->valider_remboursement();
+    return $this->commun();
+}
+
     private function valider_remboursement() {
+        $idFiche = session('id_fiche');
         
-            $this->gsb_model->maj_etat_fiche_frais(session('id_fiche'), "VA");
-        }
+        $this->gsb_model->maj_etat_fiche_frais($idFiche, "RB");
+    }
 }
