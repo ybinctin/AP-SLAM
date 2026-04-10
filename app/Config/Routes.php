@@ -25,9 +25,10 @@ $routes->post('modificationmdp/valider', 'ModificationMdp::valider');
 $routes->get('etatfrais', 'EtatFrais::index');
 $routes->post('etatfrais/mois', 'EtatFrais::selectionner_mois');
 
-$routes->get('validation', 'Validation::index');
-
 $routes->get('suivi', 'Suivi::index');
 $routes->post('suivi/infos', 'Suivi::selectionner_informations');
 
-$routes->get('suivi/valider', 'Suivi::valider_remboursement');
+$routes->get('suivi/rembourser', 'Suivi::rembourser');
+
+$routes->get('validation', 'Validation::index');
+$routes->post('validation/infos', 'Validation::selectionner_informations');
