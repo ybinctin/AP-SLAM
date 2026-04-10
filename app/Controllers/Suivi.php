@@ -133,5 +133,6 @@ class Suivi extends BaseController
         $idFiche = session('id_fiche');
         
         $this->gsb_model->maj_etat_fiche_frais($idFiche, "RB");
+        
     }
 }
