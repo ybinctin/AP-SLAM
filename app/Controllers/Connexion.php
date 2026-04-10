@@ -54,6 +54,7 @@ class Connexion extends BaseController
         if ($utilisateur) {
             session()->set([
                 'idUtilisateur' => $utilisateur['idutilisateur'],
+                'login' => $utilisateur['login'],
                 'nom' => $utilisateur['nom'],
                 'prenom' => $utilisateur['prenom'],
                 'role' => $utilisateur['idrole'],

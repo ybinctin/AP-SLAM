@@ -19,6 +19,9 @@ $routes->post('gererfrais/maj_fraisforfait', 'GererFrais::valider_maj_fraisforfa
 $routes->post('gererfrais/creation_fraishorsforfait', 'GererFrais::valider_creation_fraishorsforfait');
 $routes->get('gererfrais/supp_fraishorsforfait/(:num)', 'GererFrais::supprimer_fraishorsforfait/$1');
 
+$routes->get('modificationmdp', 'ModificationMdp::index');
+$routes->post('modificationmdp/valider', 'ModificationMdp::valider');
+
 $routes->get('etatfrais', 'EtatFrais::index');
 $routes->post('etatfrais/mois', 'EtatFrais::selectionner_mois');
 

@@ -2,7 +2,7 @@
 
 <div id="sousContenu">
     <?php
-    echo form_open(site_url('connexion/valider'));
+    echo form_open(site_url('modificationmdp/valider'));
     ?>
     <div class="corpsForm">
 
